@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mario in action. CSS Selectors!</title>
+    <style>
+        section{
+            width: 250px;
+            height: 100px;
+            border: 1px solid #333;
+        }
+        section .mario,
+        section .cactus {
+            width: 48px;
+            height: 48px;
+            float:left;
+            border:1px solid darkgreen;
+            margin-top: 50px;
+        }
+        section .mario{
+            background-image: url(./mario.png);
+        }
+        section .cactus{
+            background-image: url(./cactus.png);
+        }
+        section .mario{
+            margin-top:0;
+            margin-left: 50px;
+        }
+        section .cactus{
+            position:absolute;
+            margin-left:50px;
+        }
+        section .mario{
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        section .mario{
+            margin-left: 150px;
+        }
+        section .mario{
+            margin-left: 200px;
+        }
+        /* 1. Acest selector permite ca pentru fiecare din aceste doua imagini(mario si cactus) sa fie aplicate aceleasi stiluri, 
+        o metoda de a optimiza codul ar fi scrierea unui mixin in scss, dupa care includerea lui in clasa unde avem nevoie. 
+        
+           2. Float left permite ca targetul care a fost accesat sa pluteasca la stinga fata de containerul sau.
+              Daca era sa folosim float right, atunci elementele noastre erau sa pluteasca la dreapta fata de containerul in care se contin. 
+
+           3. Margin top impinge elementele din pozitia top in jos cu valoarea care i-o oferim. Daca era sa folosim valoarea negativa, 
+              elementele erau sa iasa in afara containerului in care se contin.
+
+           4. Elementele au dimensiunea de 50 de px.
+         */
+    </style>
+</head>
+<body>
+    <h2>Episode-1</h2>
+    <section id="episode-1">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>
+
+    <h2>Episode-2</h2>
+    <section id="episode-2">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>
+
+    <h2>Episode-3</h2>
+    <section id="episode-3">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>
+
+    <h2>Episode-4</h2>
+    <section id="episode-4">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>
+
+    <h2>Episode-5</h2>
+    <section id="episode-5">
+        <div class="mario"></div>
+        <div class="cactus"></div>
+    </section>  
+
+</body>
+</html>
